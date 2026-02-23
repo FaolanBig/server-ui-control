@@ -1,0 +1,11 @@
+{
+  "additionalFiles": "../../..,../../..",
+  "builtInToolsFolders": "",
+  "compiler.optimization_flags": "",
+  "customBuildProperties": "",
+  "fqbn": "arduino:avr:uno",
+  "hardwareFolders": "/home/fb/.arduino15/packages",
+  "otherLibrariesFolders": "/home/fb/Arduino/libraries",
+  "runtime.ide.version": "10607",
+  "sketchLocation": "/home/fb/repos/server-ui-control"
+}

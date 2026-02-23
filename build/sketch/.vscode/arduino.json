@@ -1,0 +1,6 @@
+#line 1 "/home/fb/repos/server-ui-control/.vscode/arduino.json"
+{
+    "sketch": "server-ui-control.ino",
+    "output": "build",
+    "board": "arduino:avr:uno"
+}

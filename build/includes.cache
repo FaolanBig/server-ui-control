@@ -1,0 +1,142 @@
+[
+  {
+    "Sourcefile": null,
+    "Include": "",
+    "Includepath": "/home/fb/.arduino15/packages/arduino/hardware/avr/1.8.6/cores/arduino"
+  },
+  {
+    "Sourcefile": null,
+    "Include": "",
+    "Includepath": "/home/fb/.arduino15/packages/arduino/hardware/avr/1.8.6/variants/standard"
+  },
+  {
+    "Sourcefile": "/home/fb/repos/server-ui-control/build/sketch/server-ui-control.ino.cpp",
+    "Include": "SPI.h",
+    "Includepath": "/home/fb/.arduino15/packages/arduino/hardware/avr/1.8.6/libraries/SPI/src"
+  },
+  {
+    "Sourcefile": "/home/fb/repos/server-ui-control/build/sketch/server-ui-control.ino.cpp",
+    "Include": "Adafruit_GFX.h",
+    "Includepath": "/home/fb/Arduino/libraries/Adafruit_GFX_Library"
+  },
+  {
+    "Sourcefile": "/home/fb/repos/server-ui-control/build/sketch/server-ui-control.ino.cpp",
+    "Include": "Adafruit_I2CDevice.h",
+    "Includepath": "/home/fb/Arduino/libraries/Adafruit_BusIO"
+  },
+  {
+    "Sourcefile": "/home/fb/repos/server-ui-control/build/sketch/server-ui-control.ino.cpp",
+    "Include": "Wire.h",
+    "Includepath": "/home/fb/.arduino15/packages/arduino/hardware/avr/1.8.6/libraries/Wire/src"
+  },
+  {
+    "Sourcefile": "/home/fb/repos/server-ui-control/build/sketch/server-ui-control.ino.cpp",
+    "Include": "SD.h",
+    "Includepath": "/home/fb/Arduino/libraries/SD/src"
+  },
+  {
+    "Sourcefile": "/home/fb/repos/server-ui-control/build/sketch/server-ui-control.ino.cpp",
+    "Include": "TouchScreen.h",
+    "Includepath": "/home/fb/Arduino/libraries/Adafruit_TouchScreen"
+  },
+  {
+    "Sourcefile": "/home/fb/repos/server-ui-control/build/sketch/server-ui-control.ino.cpp",
+    "Include": "MCUFRIEND_kbv.h",
+    "Includepath": "/home/fb/Arduino/libraries/MCUFRIEND_kbv"
+  },
+  {
+    "Sourcefile": "/home/fb/repos/server-ui-control/build/sketch/server-ui-control.ino.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/home/fb/.arduino15/packages/arduino/hardware/avr/1.8.6/libraries/SPI/src/SPI.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/home/fb/Arduino/libraries/Adafruit_GFX_Library/Adafruit_GFX.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/home/fb/Arduino/libraries/Adafruit_GFX_Library/Adafruit_GrayOLED.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/home/fb/Arduino/libraries/Adafruit_GFX_Library/Adafruit_SPITFT.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/home/fb/Arduino/libraries/Adafruit_GFX_Library/glcdfont.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/home/fb/Arduino/libraries/Adafruit_BusIO/Adafruit_BusIO_Register.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/home/fb/Arduino/libraries/Adafruit_BusIO/Adafruit_GenericDevice.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/home/fb/Arduino/libraries/Adafruit_BusIO/Adafruit_I2CDevice.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/home/fb/Arduino/libraries/Adafruit_BusIO/Adafruit_SPIDevice.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/home/fb/.arduino15/packages/arduino/hardware/avr/1.8.6/libraries/Wire/src/Wire.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/home/fb/.arduino15/packages/arduino/hardware/avr/1.8.6/libraries/Wire/src/utility/twi.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/home/fb/Arduino/libraries/SD/src/File.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/home/fb/Arduino/libraries/SD/src/SD.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/home/fb/Arduino/libraries/SD/src/utility/Sd2Card.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/home/fb/Arduino/libraries/SD/src/utility/SdFile.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/home/fb/Arduino/libraries/SD/src/utility/SdVolume.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/home/fb/Arduino/libraries/Adafruit_TouchScreen/TouchScreen.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/home/fb/Arduino/libraries/MCUFRIEND_kbv/MCUFRIEND_kbv.cpp",
+    "Include": "",
+    "Includepath": null
+  }
+]
