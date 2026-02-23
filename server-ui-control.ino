@@ -46,5 +46,30 @@ void setup()
 
 void loop()
 {
-	
+	int w = width / 4;
+    int h = height / 4;
+	for (w; w < width - width / 4; w++) {
+        tft.drawPixel(w, h, WHITE);
+    }
+    for (h; h < height - height / 4; h++) {
+    tft.drawPixel(w, h, WHITE);
+    }
+    for (w; w > width / 4; w--) {
+        tft.drawPixel(w, h, WHITE);
+    }
+    for (h; h > height / 4; h--) {
+    tft.drawPixel(w, h, WHITE);
+    }
+    for (w; w < width - width / 4; w++) {
+        tft.drawPixel(w, h, BLACK);
+    }
+    for (h; h < height - height / 4; h++) {
+    tft.drawPixel(w, h, BLACK);
+    }
+    for (w; w > width / 4; w--) {
+        tft.drawPixel(w, h, BLACK);
+    }
+    for (h; h > height / 4; h--) {
+    tft.drawPixel(w, h, BLACK);
+    }
 }
