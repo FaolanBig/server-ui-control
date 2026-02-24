@@ -9,9 +9,19 @@ unsigned int colors[] = {0x0000, 0x001F, 0xF800, 0x07E0, 0x07FF, 0xF81F, 0xFFE0,
 
 MCUFRIEND_kbv tft;
 
+int width = 320;
+int height = 480;
+
 void setup()
 {
+ Serial.begin(9600);
+    uint16_t ID = tft.readID();
+    tft.begin(ID);
+    tft.setRotation(1);
+    tft.fillScreen(0x0000);
 
+    width = tft.width();
+    height = tft.height();
 }
 
 void loop()

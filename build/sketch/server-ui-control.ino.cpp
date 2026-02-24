@@ -25,18 +25,28 @@ unsigned int colors[] = {BLACK, BLUE, RED, GREEN, CYAN, MAGENTA, YELLOW, WHITE};
 
 MCUFRIEND_kbv tft;
 
-#line 26 "/home/fb/repos/server-ui-control/server-ui-control.ino"
+int width = 320;
+int height = 480;
+
+#line 29 "/home/fb/repos/server-ui-control/server-ui-control.ino"
 void setup();
-#line 31 "/home/fb/repos/server-ui-control/server-ui-control.ino"
+#line 41 "/home/fb/repos/server-ui-control/server-ui-control.ino"
 void loop();
-#line 26 "/home/fb/repos/server-ui-control/server-ui-control.ino"
+#line 29 "/home/fb/repos/server-ui-control/server-ui-control.ino"
 void setup()
 {
-	
+	Serial.begin(9600);
+    uint16_t ID = tft.readID();
+    tft.begin(ID);
+    tft.setRotation(1);
+    tft.fillScreen(BLACK);
+
+    width = tft.width();
+    height = tft.height();
 }
 
 void loop()
 {
-	
+
 }
 

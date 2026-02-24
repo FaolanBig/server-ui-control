@@ -19,12 +19,39 @@
 #define YELLOW 0xFFE0
 #define WHITE 0xFFFF
 
+#define MINPRESSURE 200
+#define MAXPRESSURE 1000
+
 unsigned int colors[] = {BLACK, BLUE, RED, GREEN, CYAN, MAGENTA, YELLOW, WHITE};
 
 MCUFRIEND_kbv tft;
 
+const int XP = 8, XM = A2, YP = A3, YM = 9; //ID=0x9341
+const int TS_LEFT = 136, TS_RT = 907, TS_TOP = 942, TS_BOT = 139;
+
+TouchScreen ts = TouchScreen(XP, YP, XM, YM, 300);
+
+Adafruit_GFX_Button on_btn, off_btn;
+
+int pixel_x, pixel_y;     //Touch_getXY() updates global vars
+
 int width = 320;
 int height = 480;
+
+bool Touch_getXY(void)
+{
+    TSPoint p = ts.getPoint();
+    pinMode(YP, OUTPUT);      //restore shared pins
+    pinMode(XM, OUTPUT);
+    digitalWrite(YP, HIGH);   //because TFT control pins
+    digitalWrite(XM, HIGH);
+    bool pressed = (p.z > MINPRESSURE && p.z < MAXPRESSURE);
+    if (pressed) {
+        pixel_x = map(p.x, TS_LEFT, TS_RT, 0, tft.width()); //.kbv makes sense to me
+        pixel_y = map(p.y, TS_TOP, TS_BOT, 0, tft.height());
+    }
+    return pressed;
+}
 
 void setup()
 {
@@ -36,40 +63,9 @@ void setup()
 
     width = tft.width();
     height = tft.height();
-    Serial.print("Width: ");
-    Serial.println(width);
-    Serial.print("Height: ");
-    Serial.println(height);
-
-    tft.drawPixel(width/2, height/2, WHITE);
 }
 
 void loop()
 {
-	int w = width / 4;
-    int h = height / 4;
-	for (w; w < width - width / 4; w++) {
-        tft.drawPixel(w, h, WHITE);
-    }
-    for (h; h < height - height / 4; h++) {
-    tft.drawPixel(w, h, WHITE);
-    }
-    for (w; w > width / 4; w--) {
-        tft.drawPixel(w, h, WHITE);
-    }
-    for (h; h > height / 4; h--) {
-    tft.drawPixel(w, h, WHITE);
-    }
-    for (w; w < width - width / 4; w++) {
-        tft.drawPixel(w, h, BLACK);
-    }
-    for (h; h < height - height / 4; h++) {
-    tft.drawPixel(w, h, BLACK);
-    }
-    for (w; w > width / 4; w--) {
-        tft.drawPixel(w, h, BLACK);
-    }
-    for (h; h > height / 4; h--) {
-    tft.drawPixel(w, h, BLACK);
-    }
+
 }
